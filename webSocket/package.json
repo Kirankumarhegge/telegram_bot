@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "nodemon ws.js"
   },
   "dependencies": {
     "ws": "^8.13.0"
