@@ -51,6 +51,7 @@ server file is the main file where server is created, connection is made to db a
 ## Screenshots
 Here is one screenshot below of three diffrent users sending messages to the bot.
 User have sent all types of messages i.e text, image, video and pdf shown below
+
 <img width="720" alt="Screenshot 2023-07-12 at 1 49 48 AM" src="https://github.com/Kirankumarhegge/telegram_bot/assets/86415401/30cab206-ca5c-4026-b9bb-a4f891ec0c35">
 
 As you can see the messages are displayed on the server side. These messages contain message with user name and message sent time.
