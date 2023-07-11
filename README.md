@@ -1,25 +1,27 @@
 # Telegram_bot
-Website which broadcast the messages of user on the server side
-
-## Table of contents
-* [General info](#general-info)
-* [File Setup](#file-setup)
-* [Screenshots](#screenshots)
-* [How to use](#how-to-use)
-* [Code example](#code-example)
-
-## Genral info
 This project focuses on receiving different message types from users, such as text, images, videos, and PDF files, 
 through a Telegram bot. Using the npm-telegram-bot-api package, we extract and process these messages, ensuring 
 they are handled in the order they are received. To maintain the sequence, I have utilize an array data structure as a 
 message queue, allowing us to process messages sequentially. This approach ensures that user interactions are handled 
 in the intended order, maintaining the flow of conversations.
 
+## Table of contents
+* [Technologies](#technologies)
+* [File Setup](#file-setup)
+* [Screenshots](#screenshots)
+* [How to use](#how-to-use)
+* [Code example](#code-example)
+ 
+## Technologies
+1. Node.js: I used Node.js as the server-side JavaScript runtime environment.
+2. MongoDB: I integrated MongoDB as the database for storing and retrieving data.
+3. WebSocket: I employed WebSocket technology for real-time communication between the server and clients.
+4. Axios: I utilized Axios as the HTTP client for making requests to external APIs.
+5. Express: I utilized Express.js as the web application framework for handling HTTP requests and responses.
+
+
 ## File setup
-I have divided files mainly into two file that is webSocket and server
-where you can see db for handling the add query and get query, telegramHandler where it handles the incoming messages to the bot.
-File messageQueue is to handle incoming messages in the queue and adding it into the db as well as broadcasting it to serverside.
-server file is the main file where server is created, connection is made to db and telegramHanler is invoked. 
+I have divided files mainly into two that is webSocket and server
 
 1. WebSocket:
 * Handles WebSocket connections.
