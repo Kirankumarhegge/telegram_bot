@@ -1,4 +1,4 @@
-# telegram_bot
+# Telegram_bot
 Website which broadcast the messages of user on the server side
 
 ## Table of contents
@@ -59,6 +59,7 @@ You cannot see image, video and pdf but you can download it to view it.
 <img width="720" alt="Screenshot 2023-07-11 at 11 30 12 PM" src="https://github.com/Kirankumarhegge/telegram_bot/assets/86415401/3c72a4a3-0a7f-42f7-8007-1d6534bf123c">
 
 This is the screenshot of database
+
 <img width="720" alt="Screenshot 2023-07-12 at 12 04 32 AM" src="https://github.com/Kirankumarhegge/telegram_bot/assets/86415401/b7db1197-06c4-4094-8cff-fe0f432d3557">
 
 
@@ -82,7 +83,7 @@ Open another terminal
 $ cd client
 $ npm i ws
 ```
-Create a file named .env
+Create a file named .env and replace to your telegram bot token and db string
 ```
 TOKEN=TELEGRAM_BOT_TOKEN
 DBSTRING=DATABASE_STRING
