@@ -30,7 +30,7 @@ bot.on('message', (message) => {
   else if (message.photo) {
     // Handles photo 
     // console.log("Coming into Photo Message")
-    const photo = message.photo[0]; // Get the first photo in the array
+    const photo = message.photo[message.photo.length - 1]; // Get the highest quality photo in the array
     const photoId = photo.file_id;
     const telegramMessage = {
       photoId: photoId,
@@ -48,7 +48,7 @@ bot.on('message', (message) => {
       // Handles videos 
       // console.log("Coming into video Message")
       const video = message.video;
-      const videoId = video.thumbnail.file_id;
+      const videoId = video.file_id;
       const telegramMessage = {
         videoId: videoId,
         from: {
@@ -65,7 +65,7 @@ bot.on('message', (message) => {
     // Handles documents 
     // console.log("Coming into doc Message")
     const document = message.document;
-    const documentId = document.thumbnail.file_id;
+    const documentId = document.file_id;
     const documentName = document.file_name;
     const telegramMessage = {
       documentId: documentId,
