@@ -9,14 +9,6 @@ const app = express();
 // Create an Express app
 app.use(express.json());
 
-// This will receive incoming messages from Telegram
-app.post('/webhook', (req, res) => {
-  const message = req.body;
-  console.log('this is req',req);
-  processQueue(message);
-  res.sendStatus(200);
-});
-
 // Broadcast port path where all the messages are retrived
 app.get('/', async (req, res) => {
     try {
